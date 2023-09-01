@@ -1,5 +1,5 @@
 # Use a lightweight web server as the base image
-FROM nginx:alpine
+FROM --platform=linux/amd64 nginx:alpine
 LABEL org.opencontainers.image.source=https://github.com/HuskyIsHere/nginx-webserver.git
 
 # Copy the HTML file into the container
